@@ -54,7 +54,7 @@ class PushNotifyNotification extends Notification
     public function toArray($notifiable)
     {
         return [
-            'data' => $this->content,
+            ...$this->content
         ];
     }
 }

@@ -54,7 +54,7 @@ class PushFacadesNotification extends Notification implements ShouldQueue
     public function toArray($notifiable)
     {
         return [
-            'data' => $this->content,
+            ...$this->content,
         ];
     }
 }
